@@ -1,0 +1,390 @@
+@import url(reset.css);
+ @font-face {
+    font-family: "Bebas"; 
+    src: url(../fonts/BebasNeueBold.woff);
+   }
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans Regular'), local('DroidSans-Regular'), url(https://fonts.gstatic.com/s/droidsans/v8/s-BiyweUPV0v-yRb-cjciPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+ @font-face {
+    font-family: "StMarie-Thin";
+    src: url(../fonts/StMarie-Thin.woff);
+   }
+@font-family{
+	font-family:'Calibri-Bold';
+	src:url(../fonts/Calibri-Bold.woff);
+}
+ /*=============*/
+ body{
+	background-color: #ffffff;
+	font-size:10px;
+	height:100%;
+}
+/*====================LOGO -- START======================*/
+.logo-image{
+	margin-top:5px;
+	float:left;
+	margin-left:25px;
+}
+h1{
+	text-align:center;
+	color:#fb9c06;
+	float:left;
+	padding-top:20px;
+	margin-left:50px;
+	font-family:Droid Sans;
+	font-size:1.8rem;
+	 font-weight:bold;
+	 line-height:150%;
+	 letter-spacing:1px;
+	
+}
+h1 span{
+	font-family:Bebas;
+	color:#6e6d6b;
+	font-size:2.9rem;
+	font-weight:bolder;
+	
+	
+}
+
+/*====================LOGO -- END=========================*/
+
+ /*======================NAVIGATION -- START======================*/
+a{
+	text-decoration: none;
+	font-family:'Droid Sans', Helvetica, Sans;
+	color:#9e9b9b;
+	font-size:1.2rem;
+}
+nav a{
+	padding-top:70px;
+	text-align:center;
+	background: url(../pics/sprite.png) no-repeat;
+	display:inline-block;
+	width:100px;
+	height:30px;
+}
+nav a:hover{
+	border-radius:5%;
+	background-color:rgba(254,199,89,0.9);
+	padding-bottom:0px;
+	color:white;
+	text-decoration:underline;
+	}
+.home-button{
+	background-position:-403px -20px;
+	
+}
+.about-button{
+	background-position:10px -16px;
+}
+.work-button{
+	background-position:-190px -16px;
+}
+.blog-button{
+	background-position:-83px -13px;
+}
+.contact-button{
+	background-position:-293px -8px;
+}
+nav{
+	float: right;
+	margin-top: 7px;
+	margin-right:85px;
+}
+ /*======================NAVIGATION -- END======================*/
+
+
+
+
+/*=========================*/
+
+
+
+
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	height: 128px;
+	overflow: hidden;
+	background-color: #ffffff;
+	z-index: 100;
+}
+
+.wrapper{
+	width: 1220px;
+	margin: 0 auto;
+}
+
+header div div{
+	float: left;
+	width: 86px;
+
+}
+/*==================================SLIDER -- START===========*/
+
+.slider-picture{
+	height: 400px;
+	background: url(../pics/orange.jpg) no-repeat;
+	margin-top: 128px;
+	border-top: 4px solid #fb9c06;
+	border-bottom: 4px solid #fb9c06;
+	margin-bottom:30px;
+
+}
+.slider-picture div:first-child{
+	position: relative;
+}
+	
+.slider-heading{
+	font-weight:bold;
+	text-align:center;
+	font-family: Bebas;
+	font-size:2.9rem;
+	position: absolute;
+	
+	
+	box-sizing:border-box;
+	
+	
+}
+.slider-picture .wrapper h2:first-child {
+	left: 22px;
+	top: 132px;
+	background-color: rgba(77,78,79,0.9);
+	color: #fb9c06;
+	width: 380px;
+	height: 65px;
+	padding-top:12px;
+}
+.slider-picture .wrapper h2:last-child {
+	left: 15px;
+	top: 225px;
+	background-color: rgba(254,199,89,0.9);
+	color: #6e6d6b;
+	width:395px;
+	height:76px;
+		padding-top:15px;
+}
+/*============================SLIDER -- END===============*/
+
+/*================================4 ARTICLES -- START========================*/
+main section:first-child article{
+	width: 260px;
+	float: left;
+	margin: 10px 20px 25px 20px;
+}
+
+main section{
+	overflow: hidden;
+	
+	margin-bottom:15px;
+
+}
+
+main section:first-child article{
+	color: #000000;
+}
+
+main section:first-child p{
+	text-align: right;
+	font-style: italic;
+	
+}
+main section:first-child a{
+	color: #ffac00;
+	font-size:14px;
+}
+.columns{
+	 line-height:180%;
+	font-family:'Droid Sans';
+	font-size:14px;
+	font-weight:bold;
+	
+	
+}
+.loremArticles{
+	margin-top:50px;
+}
+.loremArticles a:hover{
+	text-decoration:underline;
+}
+.gradient-line{
+	width:100%;
+	height:2px;
+	background: rgba(247,247,247,1);
+background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(242,242,242,1) 50%, rgba(247,247,247,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,247,247,1)), color-stop(50%, rgba(242,242,242,1)), color-stop(50%, rgba(247,247,247,1)), color-stop(51%, rgba(247,247,247,1)), color-stop(100%, rgba(247,247,247,1)));
+background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(242,242,242,1) 50%, rgba(247,247,247,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+background: -o-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(242,242,242,1) 50%, rgba(247,247,247,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+background: -ms-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(242,242,242,1) 50%, rgba(247,247,247,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+background: linear-gradient(to bottom, rgba(247,247,247,1) 0%, rgba(242,242,242,1) 50%, rgba(247,247,247,1) 50%, rgba(247,247,247,1) 51%, rgba(247,247,247,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7f7f7', GradientType=0 );
+}
+
+/*================================4 ARTICLES -- END========================*/
+
+
+/*============================Meet the team section -- START===============*/
+.img-circle{
+	border-radius:50%;
+	border:10px #ffb540 solid;
+	width:292px;
+	height:292px;
+}
+section figure span{
+	color: #fdd1a4;
+}
+.avatar-capture{
+	font: 22px 'Droid Sans';
+	color: #6e6d6b;
+	text-align:center;
+}
+section h3{
+	font-family:"StMarie-Thin";
+	font-size:2.6rem;
+	text-decoration: underline;
+	text-align: center;
+	color: #fcb869;
+	margin-bottom: 45px;
+	margin-top:20px;
+}
+figure{
+	height:400px;
+}
+main section:nth-child(2){
+	/*height: 500px;*/
+}
+
+/*main section:nth-child(2) article{
+	width: 312px;
+	height: 400px;
+	float: left;
+	padding: 0 10px;
+	margin-right: 102px;
+}*/
+
+/*main section:nth-child(2) article:last-child{
+	margin-right: 0;
+}*/
+.crew-info{
+	height:500px;
+	width:320px;
+	float:left;
+}
+.meetTheTeamSection{
+	width:1220px;
+	margin-bottom:0px;
+}
+.first-avatar{
+	padding-right:140px;
+}
+.meetTheTeamSection article:last-child{
+		padding-left:113px;
+}
+figure{
+	text-align:center;
+}
+figcaption{
+	margin-bottom:30px;
+}
+.team-info{
+	width:260px;
+	margin-left:40px;
+	font-size:15px;
+	line-height:150%;
+	font-family:'Droid Sans', Helvetica, Sans;
+}
+/*============================Meet the team section -- END===============*/
+
+main{
+	width: 1200px;
+	margin: 0 auto;
+
+	
+}
+
+
+
+
+
+
+
+
+form label{
+	color: #fb9c06;
+	font-size: 25px;
+	display: inline;
+	margin-bottom: 37px;
+	float: left;
+	font-family:"StMarie-Thin";
+}
+
+form input[type="text"],input[type="email"]{
+	height:34px;
+}
+.input-styling{
+	width: 1050px;
+	border-top: 2px solid #d2d0cf;
+	border-left: 4px solid #d2d0cf;
+	border-bottom: 0;
+	border-right: 0;
+	margin-bottom: 37px;
+	float: right;
+	
+}
+.input-styling:hover{
+	border:1px #fb9c06 solid;
+	
+}
+
+form input[type="image"]{
+	float: right;
+	margin-right: 33px;
+	margin-bottom: 37px;
+	cursor:pointer;
+}
+
+form{
+	overflow: hidden;
+}
+
+.clear{
+	clear: both;
+}
+
+footer{
+	width: 100%;
+	height: 70px;
+	background-color: #fb9c06;
+	color: #fff9ef;
+	border-bottom: 4px solid #cc830f;
+	font-size: 25px;
+	margin-top:-70px;
+	position: relative;
+	font-family:"StMarie-Thin";
+}
+
+footer p{
+	position: relative;
+	top: 35%;
+	left: 0;
+	text-align: center;
+}
+.content-wrapper{
+	min-height:100%;
+}
+html,body{
+	height:100%;
+}
+main{
+	padding-bottom:70px;
+}
